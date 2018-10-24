@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $purple;
+  height: 5.6rem;
+
+  &__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+
+    &-items a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        color: $orange;
+      }
+    }
+
+    &-items ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    &-items li {
+      padding: 0 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__logo {
+    margin-left: 1rem;
+  }
+
+  &__logo a {
+    color: $white;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+}
+
+.spacer {
+  flex: 1;
+}
